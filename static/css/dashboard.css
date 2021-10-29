@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.florese{
+    font-family: 'segoe UI',Tahoma,Arial,sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 20px;
+    letter-spacing: -0.2px;
+    color: #ffffff;
+
+    position: absolute;
+    top: 5%;
+    left: 35%;
+}
+.Dashboard {
+    text-align: left;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    
+}
+.dashboard{
+    font-family: 'segoe UI',Tahoma,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.2px;
+    color: #CCCCCC;
+}
+.wrapper{
+    display: flex;
+    
+       
+    
+}
+.wrapper .sidebar{
+    position:fixed;
+
+    width: 294px;
+    height: 900px;
+    left: 0px;
+    top: 0px;
+    background: #002979;
+
+    
+}
+.wrapper .sidebar ul li{
+    padding: 15px;
+
+}
+.Gusuario {
+    text-align: left;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+.gUsuario{
+    font-family: 'segoe UI',Tahoma,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.2px;
+    color: #CCCCCC;
+
+}
+.Gimagenes {
+    text-align: left;
+    position: absolute;
+    height: 20px;
+    width: 200px;
+    top: 20%;
+    left: 15%;
+}
+
+.gImagenes{
+    font-family: 'segoe UI',Tahoma,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.2px;
+    color: #CCCCCC;
+}
+.Gcomentarios {
+    text-align: left;
+    position: absolute;
+    top: 25%;
+    left: 15%;
+}
+.gComentarios{
+    font-family: 'segoe UI',Tahoma,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.2px;
+    color: #CCCCCC;
+}
+.iconodashboard{
+    position: absolute;
+    top:11.5%;
+    left: 5%;
+    height: 25px;
+    width: 25px;
+}
+.iconogusuario{
+    position: absolute;
+    top:16.6%;
+    left: 6%;
+    height: 22px;
+    width: 22px;
+       
+}
+.iconogimagenes{
+    position:absolute;
+    top:21.6%;
+    left: 6%;
+    height: 22px;
+    width: 22px;
+}
+.iconogcomentarios{
+    position:absolute;
+    top:26.5%;
+    left: 6%;
+    height: 20px;
+    width: 20px;
+}
+.iconoflorese{
+    position:absolute;
+    top:4%;
+    left: 22%;
+    height: 33px;
+    width: 33px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cartaUsuario{
+    padding:2px 0px 2px 0px;
+}
+.comentarioContainer{
+    position: relative;
+    left: 30%;
+    top:80px;
+
+
+    width: 60%;
+    height:flex;
+    border: solid 1px #a7a7a7;
+    padding:5px 0 7px 8px;
+    
+}
+.comentario{
+    font-family: 'segoe UI',Tahoma,Arial,sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 12px;
+    color:#313131;
+    word-wrap: break-word;
+}
+.usuario{
+    position:flex;
+    width: flex;
+    height:flex;
+    font-family: 'segoe UI',Tahoma,Arial,sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 15px;
+    color:#474747;
+    overflow: auto;
+
+}
+.imgUsuario{
+    float: left;
+    padding:3px;
+    border-radius: 100%;
+}
+.comentarContainer{
+    position: flex;
+    width: 100%;
+    height: 3rem;
+
+    border-radius: 0.5rem;
+
+}
+.comentar{
+    width: 100%;
+    height:2.5rem;
+    border: solid 1px #a7a7a7;
+    border-radius: 0.5rem;
+}
+
+.btnBorrar{
+    position: relative;
+    top: 65px;
+    left: 79%;
+    height: 1.8rem;
+    width:15%;
+
+    
+    
+    font-family: 'segoe UI',Tahoma,Arial,sans-serif;
+    color: #ffffff;
+    border: none;
+    background: #002979;
+    border-radius: 7px;
+    
+}
+.comentar::placeholder{
+    font-family: 'segoe UI',Tahoma,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color:#878787;
+
+}

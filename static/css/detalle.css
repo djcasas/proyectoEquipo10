@@ -1,0 +1,74 @@
+.cartaUsuario{
+    padding:2px 0px 2px 0px;
+}
+.comentarioContainer{
+    width: flex;
+    height:flex;
+    border: solid 1px #a7a7a7;
+    padding:5px 0 7px 8px;
+    
+}
+.comentario{
+    font-family: 'segoe UI',Tahoma,Arial,sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 12px;
+    color:#313131;
+    word-wrap: break-word;
+}
+.usuario{
+    position:flex;
+    width: flex;
+    height:flex;
+    font-family: 'segoe UI',Tahoma,Arial,sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 15px;
+    color:#474747;
+    overflow: auto;
+
+}
+.imgUsuario{
+    float: left;
+    padding:3px;
+    border-radius: 100%;
+}
+.comentarContainer{
+    position: flex;
+    width: 100%;
+    height: 3rem;
+
+    border-radius: 0.5rem;
+
+}
+.comentar{
+    width: 100%;
+    height:2.5rem;
+    border: solid 1px #a7a7a7;
+    border-radius: 0.5rem;
+}
+
+.btnComentar{
+    position: relative;
+    top: -35px;
+    left: 82%;
+    height: 1.8rem;
+    width:15%;
+
+    
+    
+    font-family: 'segoe UI',Tahoma,Arial,sans-serif;
+    color: #ffffff;
+    border: none;
+    background: #002979;
+    border-radius: 7px;
+    
+}
+.comentar::placeholder{
+    font-family: 'segoe UI',Tahoma,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color:#878787;
+
+}

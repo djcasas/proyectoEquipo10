@@ -1,0 +1,166 @@
+.logo{
+    width: 20vw; 
+    height: 20vh;
+    position: absolute;
+    left: 900px;
+    top: 100px;
+}
+.imagenInicio{
+    width: 20vw; 
+    height: 20vh;
+}
+.titulo1{
+    position: absolute;
+    top: 139px;
+    left: 567px;
+    width: 79px;
+    height: 19px;
+
+    font-family: 'segoe UI',Tahoma,Arial,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    line-height: 100%;
+    align-items: left;
+    vertical-align: Top;
+
+    color: #1A202C;
+}
+.titulo2{
+    position: absolute;
+    width: 280px;
+    height: 35px;
+    left: 567px;
+    top: 150px;
+
+    font-family: 'segoe UI',Tahoma,Arial,sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+
+    color: #1A202C;
+}
+.idboxspan{
+    position: absolute;
+    left: 41%;
+    right: 0%;
+    top: 40%;
+
+    font-family: 'segoe UI',Tahoma,Arial,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    
+}
+.idpass-container{
+    position: absolute;
+    left: 41%;
+    right: 0%;
+    top: 53%;
+
+
+    font-family: 'segoe UI',Tahoma,Arial,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+   
+}
+.boxid{
+    width: 300px;
+    height:40px;
+    position: absolute;
+    left: 41%;
+    right: 0%;
+    top: 45%;
+    
+
+    border: 1px solid #E8E8E8;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    overflow: hidden;
+    padding:9px 0 7px 8px;
+    background: rgba(var(--b3f,250,250,250),1);
+}
+.boxpass{
+    width: 300px;
+    height:40px;
+    position: absolute;
+    left: 41%;
+    right: 0%;
+    top: 58%;
+
+    border: 1px solid #E8E8E8;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    overflow: hidden;
+    padding:9px 0 7px 8px;
+    background: rgba(var(--b3f,250,250,250),1);
+}
+.btnInicio{
+    width: 300px;
+    height:40px;
+    position: absolute;
+    left: 41%;
+    right: 0%;
+    top: 70%;
+
+    
+    background: #002979;
+    border-radius: 5px;
+    border: 1px solid #E8E8E8;
+
+    font-family: 'segoe UI',Tahoma,Arial,sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+.buttonRegistrarse{
+    width: 300px;
+    height:40px;
+    position: absolute;
+    left: 41%;
+    right: 0%;
+    top: 80%;
+
+    background: #2D3748;
+    border-radius: 5px;
+    border: 1px solid #E8E8E8;
+    
+    
+}
+.btnRegistrarse{
+    
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    
+    text-decoration:none;
+    
+    font-family: 'segoe UI',Tahoma,Arial,sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+.recordar-container{
+
+    position: absolute;
+    left: 41%;
+    right: 0%;
+    top: 66%;
+    
+    font-family: 'segoe UI',Tahoma,Arial,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+}

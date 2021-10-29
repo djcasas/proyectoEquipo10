@@ -1,0 +1,29 @@
+{% extends 'dashboard.html' %}
+
+{% block body %}
+    {% for msg in get_flashed_messages() %}
+            <p class="text-center col-sm-5 m-auto bg-success text-white"> {{ msg }}</p>
+    {% endfor %} 
+
+<div class="contenedorPublicacion">
+    {%for img in publicaciones%}
+    <div class="card">
+      
+      <div class="card-body">
+        <h5 class="card-title">{{img[1]}}</h5>
+        <img src="../static/imagenes/imgpub/{%print(img[3])%}" class="ImagenPublicacion" alt="..." />
+        <p class="card-text">
+            {{img[2]}}
+        </p>
+       
+      </div>
+
+      <form class="borrar" id="borrar" name="borrar" action="{{url_for('Gimagenes')}}" method="post">
+        <input class="Borrar"  type="text" value="{{img[0]}}" hidden name="borrar" id="borrar" >
+        <button class="btnBorrar" type="submit">Borrar</button>
+      </form>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

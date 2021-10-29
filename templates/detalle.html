@@ -1,0 +1,70 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="contenedorperfil">
+    <div class="contenedorPerfil">
+        {%for img in publicacion%}
+            
+                
+                <div class="card">
+                
+                    <div class="card-body">
+                        <h5 class="card-title">{{img[1]}}</h5>
+                        <img src="../static/imagenes/imgpub/{%print(img[3])%}" class="ImagenPublicacion" alt="..." />
+                        <p class="card-text">
+                            {{img[2]}}
+                        </p>
+
+                        
+                    </div>
+
+                </div>
+            
+        {% endfor %}
+
+        {%for com in Comentarios%}
+        <div class="cartaUsuario">
+            <div class=comentarioContainer>
+                <div>
+                    {%for imagen in imagenes%}
+                        {% if com[1]==imagen[0] %}
+                            <img class="imgUsuario" src="../static/imgperfil/{%print(imagen[1])%}"  width="40px"height="40px">
+                        {% endif %}
+                    {% endfor %}
+                    <h5 class=usuario>{{com[1]}}</h5>
+                </div>
+                <div>
+                    <h5 class="comentario">{{com[2]}}</h5>
+                </div>
+            </div>
+
+        </div>
+        
+        {% endfor %}
+        {%for img in publicacion%}
+        <div>
+            <form action="{{ url_for('comentar')}}"  method="post" class="form" enctype="multipart/form-data">
+                {{ form.csrf_token }}            
+                <d class="tituloContainer">
+                    <div class=comentarContainer>
+                            <label class="Titulo"></label>
+                                        
+                        {{ form.comentario(class="comentar",placeholder="  Agrega un Comentario..")}}
+                        <button class="btnComentar">Comentar</button>  
+                    </div>
+                </d>
+                            
+                
+
+                <input type="text" value="{{ img[0]}}" name="id" hidden>
+                
+                                    
+                
+            </form>
+            
+
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

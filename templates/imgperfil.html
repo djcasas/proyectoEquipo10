@@ -1,0 +1,34 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+    <div class="contenedorboddy">
+        <form action="{{ url_for('imgperfil')}}" method="post" class="form" enctype="multipart/form-data">
+            {{ form.csrf_token }}            
+            <div class="containerFile">
+                <div class="col-sm-3">
+                    <label class="form-label"></label>
+                </div>          
+     
+                {{ form.imagen(value = Imagen[1])}}          
+            </div>
+           
+            <input type="text" value="{{ Imagen[0]}}" name="usuario" hidden>    
+            <input type="text" value="{{ Imagen[1]}}" name="filename" hidden>                  
+            <button class="botonEditar">Cambiar imagen</button>
+        </form>
+
+        
+        <div class="contenedorProfilePicture">
+          <div class="card-body">
+            <h5 class="card-title">{{Imagen[0]}}</h5>
+            <img src="../static/imgperfil/{%print(Imagen[1])%}" class="profilePicture" alt="..." />
+          </div>
+        </div>
+        <h1 class='nombreprofile'>{{session['user']}}</h1>
+
+  
+        
+        
+    </div>
+{% endblock %}

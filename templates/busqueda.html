@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="contenedorperfil">
+    <div class="contenedorPerfil">
+
+        {%for img in publicacion%}
+
+
+                <div class="card">
+                
+                    <div class="card-body">
+                        <h5 class="card-title">{{img[1]}}</h5>
+                        <img src="../static/imagenes/imgpub/{%print(img[3])%}" class="ImagenPublicacion" alt="..." />
+                        <p class="card-text">
+                            {{img[2]}}
+                        </p>
+                        <input type="text" value="{{ img[0]}}" name="id" hidden> 
+                    </div>
+                    <form class="detalle" id="detalle" name="detalle" action="{{url_for('detalle')}}" method="post">
+                        <input class="Detalle"  type="text" value="{{ img[0]}}" hidden name="detalle" id="detalle" >
+                        <button class="btnDetalle" type="submit">Detalle</button>
+                      </form>
+                </div>
+
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
+

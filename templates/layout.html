@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/layout.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="../static/css/perfil.css">
+    <link rel="stylesheet" href="../static/css/detalle.css">
+    <link rel="stylesheet" href="../static/css/imgperfil.css">
+</head>
+<body>
+  <div>
+    <nav class="navbar">
+      {% if 'user' in session %}
+      
+      <a class="NombreUsuario" href="{{url_for('imgperfil')}}"> {{session['user']}} </a>
+      {% endif %}
+      <form class="Buscador" id="buscar" name="buscar" action="{{url_for('busqueda')}}" method="post">
+        <input class="Buscar" type="search" placeholder="Busqueda..."name="buscar" id="buscar" >
+        <button class="btnBuscar" type="submit"><img class="iconoBuscar" src="../static/imagenes/buscar.png" ></button>
+      </form>
+
+    </nav>
+  </div>
+  <div class="wrapper">
+    <div class="sidebar">
+      <ul>
+        <li class="actividad"><a class="Actividad" href="{{url_for('index')}}">Actividad</a></li>
+        <li class="miPerfil"><a class="MiPerfil" href="{{url_for('perfil')}}">Mi Perfil</a></li>
+        <li class="salir"><a class="Salir" href="{{url_for('logout')}}">Salir</a></li>
+        <img class="iconoActividad" src="../static/imagenes/feed.png">
+        <img class="iconoProfile" src="../static/imagenes/profile.png">
+        <img class="iconoSalir" src="../static/imagenes/exit.png">
+
+
+          
+
+
+      </ul>
+
+    </div>
+</div>
+   
+      {% block body %}
+        
+      {% endblock %}
+    </body>
+    </html>

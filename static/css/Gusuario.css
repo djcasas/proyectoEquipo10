@@ -1,0 +1,47 @@
+.contenedorusuario{
+    position: relative;
+    width: 60%;
+    height: flex;
+    top: 30px;
+    left: 30%;
+
+}
+.card-Usuario{
+    position:relative;
+    left: 30%;
+    top:40px;
+    width: 40%;
+    font-family: 'segoe UI',Tahoma,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: #878787;
+
+}
+.cardusuario{
+
+    position: flex;
+    width:40%;
+}
+.ImagenUsuario{
+    height:6rem;
+    width: 6rem;
+
+}
+.btnBorrarUsuario{
+    position: relative;
+    top: -30px ;
+    left: 35%;
+    height: 1.8rem;
+    width:15%;
+
+    
+    
+    font-family: 'segoe UI',Tahoma,Arial,sans-serif;
+    color: #ffffff;
+    border: none;
+    background: #002979;
+    border-radius: 7px;
+    
+}

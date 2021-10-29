@@ -1,0 +1,65 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+            {% if usuarios[0][5] ==1 %}
+              <li class="dashBoard"><a class="DashBoard" href="{{url_for('dashboard')}}">Dashboard</a></li>
+              <img class="iconoDashboard" src="../static/imagenes/dashboard.png">
+             {% endif %}
+<div class="containerFeed">
+    <div class="containerPublicacion">
+        <div class="containerImagen">
+            <form action="{{ url_for('index')}}" method="post" class="form" enctype="multipart/form-data">
+                {{ form.csrf_token }}            
+                <div class="tituloContainer">
+                    <div class="divTitulo">
+                        <label class="Titulo"></label>
+                    </div>                
+                    {{ form.titulo(class="TituloContainer",placeholder="Titulo")}}          
+                </div>
+                <div class="descripcionContainer">
+                    <div class="DescripcionContainer">
+                        <label class="Descripcion" "></label>
+                    </div>                
+                    {{ form.descripcion(class="descripcion",placeholder="Escriba Aqui...")}}          
+                </div>
+            
+                <div class="mb-3">
+                    <div class="col-sm-3">
+                        <label class="form-label"></label>
+                    </div>                
+                    {{ form.imagen(class="imagen")}}          
+                </div>
+                                    
+                <button class="btnPublicar">Publicar</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="contenedorPublicacion">
+        {%for img in publicacion%}
+        <div class="card">
+          
+          <div class="card-body">
+            <h5 class="card-title">{{img[1]}}</h5>
+            <img src="../static/imagenes/imgpub/{%print(img[3])%}" class="ImagenPublicacion" alt="..." />
+            <p class="card-text">
+                {{img[2]}}
+            </p>
+           
+          </div>
+
+          <form class="detalle" id="detalle" name="detalle" action="{{url_for('detalle')}}" method="post">
+            <input class="Detalle"  type="text" value="{{ img[0]}}" hidden name="detalle" id="detalle" >
+            <button class="btnDetalle" type="submit">Detalle</button>
+          </form>
+        </div>
+        {% endfor %}
+    </div>
+    
+
+
+</div>
+{% endblock %}
+
+

@@ -1,0 +1,29 @@
+{% extends 'dashboard.html' %}
+
+{% block body %}
+
+        {%for com in Comentarios%}
+        <div class="cartaUsuario">
+            <div class=comentarioContainer>
+                <div>
+                    {%for imagen in imagenes%}
+                        {% if com[1]==imagen[0] %}
+                            <img class="imgUsuario" src="../static/imgperfil/{%print(imagen[1])%}"  width="40px"height="40px">
+                        {% endif %}
+                    {% endfor %}
+                    <h5 class=usuario>{{com[1]}}</h5>
+                </div>
+                <div>
+                    <h5 class="comentario">{{com[2]}}</h5>
+                </div>
+            </div>
+            <form class="borrar" id="borrar" name="borrar" action="{{url_for('Gcomentarios')}}" method="post">
+                <input class="Borrar"  type="text" value="{{com[2]}}" hidden name="borrar" id="borrar" >
+                <button class="btnBorrar" type="submit">Borrar</button>
+              </form>
+        </div>
+        
+        {% endfor %}
+
+
+{% endblock %}

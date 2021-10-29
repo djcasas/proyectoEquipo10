@@ -1,0 +1,56 @@
+.contenedorperfil{
+    position: absolute;
+    top:20%;
+    left: 25%;
+    width: 40rem;
+
+    border-bottom: 2px solid #e7e6e6;
+ 
+}
+
+
+
+.ImagenPublicacion{
+    
+    position:flex;
+    top:50%;
+    left: 25%;
+    width: 40rem;
+    height: flex;
+
+
+}
+.card-title{
+    font-family: 'segoe UI',Tahoma,Arial,sans-serif;
+    font-weight: bold; 
+    font-style: normal;
+
+    font-size: 13px;
+    color: #878787;
+    overflow: hidden;
+    padding:9px 0 20px 20px;
+}
+.card-text{
+    font-family: 'segoe UI',Tahoma,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    color: #878787;
+    overflow: hidden;
+    padding:9px 0 20px 20px;
+    width: 30rem;
+
+}
+.btnDetalle{
+    position: relative;
+    height: 40px;
+    width: 100px;
+    left:80%;
+
+    
+    font-family: 'segoe UI',Tahoma,Arial,sans-serif;
+    color: #ffffff;
+    border: none;
+    background: #20A6FC;
+    border-radius: 7px;
+}

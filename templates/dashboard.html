@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/dashboard.css">
+    <link rel="stylesheet" href="../static/css/Gimagenes.css">
+    <link rel="stylesheet" href="../static/css/Gusuario.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="wrapper">
+            <div class="sidebar">
+                <a class="florese" href="{{url_for('index')}}">Florese</a>
+            <ul>
+                <li class="Dashboard"><a class="dashboard" href="{{url_for('index')}}">Dashboard</a></li>
+                <li class="Gusuario"><a class="gUsuario" href="{{url_for('Gusuario')}}">Gestion de Usuario</a></li>
+                <li class="Gimagenes"><a class="gImagenes" href="{{url_for('Gimagenes')}}">Gestion de Imagenes</a></li>
+                <li class="Gcomentarios"><a class="gComentarios" href="{{url_for('Gcomentarios')}}">Gestión de Comentarios</a></li>
+                <img class="iconodashboard" src="../static/imagenes/dashboard.png">
+                <img class="iconogusuario" src="../static/imagenes/gusuario.png">
+                <img class="iconogimagenes" src="../static/imagenes/gimagenes.png">
+                <img class="iconogcomentarios" src="../static/imagenes/gcomentarios.png">
+                <img class="iconoflorese" src="../static/imagenes/flower.png">
+                
+            </ul>
+
+            </div>
+        </div>
+    </div>
+     {% block body %}
+        
+      {% endblock %}
+
+</body>
+</html>

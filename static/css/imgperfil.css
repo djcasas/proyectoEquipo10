@@ -1,0 +1,53 @@
+.contenedorboddy{
+    border: 1px solid transparent;
+
+}
+
+.profilePicture{
+    display: block;
+    margin:auto;
+    height: 15rem;
+    width: flex;
+    position: relative;
+    border-radius:100%;
+
+}
+.containerFile{
+    position: relative;
+    top: 2rem;
+    left:28%;
+    border: 1px solid transparent;
+}
+
+
+.botonEditar{
+    position: relative;
+    top: 0.7rem;
+    left: 50rem;
+    height: 1.5rem;
+    width: 8rem;
+
+    font-family: 'segoe UI',Tahoma,Arial,sans-serif;
+    color: #ffffff;
+    border: none;
+    background: #002979;
+    border-radius: 7px;
+}
+.nombreprofile{
+    text-align: center;
+    font-family: 'segoe UI',Tahoma,Arial,sans-serif;
+    font-style: italic;
+    color: #002979;
+
+}
+
+
+
+
+
+
+
+        
+    
+
+

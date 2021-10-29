@@ -1,0 +1,31 @@
+{% extends 'dashboard.html' %}
+
+{% block body %}
+
+<div>
+
+    <div>
+        <div class="contenedorusuario">
+            {%for usuario in Usuarios%}
+            <div class="cardusuario">
+                <div class="card-usuario">
+                <h5 class="card-Usuario">{{usuario[1]}}</h5>
+                {%for imagen in imagenes%}
+                    {% if usuario[1]==imagen[0] %}
+                        <img src="../static/imgperfil/{%print(imagen[1])%}" class="ImagenUsuario" alt="..." />
+                    {% endif %}
+                {% endfor %}
+                </div>
+        
+                <form class="borrar" id="borrar" name="borrar" action="{{url_for('Gusuario')}}" method="post">
+                <input class="Borrar"  type="text" value="{{usuario[1]}}" hidden name="borrar" id="borrar" >
+                <button class="btnBorrarUsuario" type="submit">Borrar</button>
+                </form>
+        </div>
+               
+              
+            {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

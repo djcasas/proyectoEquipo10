@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="../static/css/registro.css".css">
+</head>
+<body>
+    <main class="principal"></main>
+    <div class="imagenInicio">
+        <img src="../static/imagenes/imagenInicio.png" alt="Imagen Inicio" width="445px"height="605px">
+    </div>
+    <div class="logo">
+        <img src="../static/imagenes/logo.png" alt="Imagen Inicio" width="450"height="450">
+    </div>
+
+    <div class="container d-flex">
+        <div class="col-sm-5 m-auto">
+            <form action="" method="post">
+                {{form.csrf_token}}
+
+                <h3 class="titulo1">Registro</h3>
+                <h2 class="titulo2">Crea una Nueva Cuenta</h2>
+                
+            
+                    <div class="idbox">
+                        <div class="idbox-container">
+                            <label class="idboxspan" >{{form.NuevoUsuario.label}}</label>
+                        </div>
+                        {{form.NuevoUsuario(class="boxid",placeholder="Digite su nombre de usuario")}}
+                        
+                    </div>
+                    
+                    <div class="idpass">
+                        <div class="idpass-container">
+                            <label class="form-label">{{form.NuevoPassword.label}}</label>
+                        </div>
+                        {{form.NuevoPassword(class="boxpass",placeholder="Digite su Contraseña")}}
+                    </div>
+
+                    <div class="idmail">
+                        <div class="idmail-container">
+                            <label class="idmailspan">{{form.NuevoCorreo.label}}</label>
+                        </div>
+                        {{form.NuevoCorreo(class="boxmail",placeholder="Digite su Correo")}}
+                    </div>
+
+                    <div class="idedad">
+                        <div class="idedad-container">
+                            <label class="idedadspan">{{form.NuevoEdad.label}}</label>
+                        </div>
+                        {{form.NuevoEdad(class="boxedad",placeholder="Digite su Edad")}}
+                    </div>
+                    
+
+
+                    <div class="buttonRegistrarse">
+                        <button class="btnRegistrarse"  type="submit">Registrarse</button>
+                    </div>
+                   
+
+                
+
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

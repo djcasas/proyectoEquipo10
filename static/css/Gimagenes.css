@@ -1,0 +1,46 @@
+
+.contenedorPublicacion{
+    background-color:transparent;
+
+    position:absolute;
+    width: 40rem;
+    height: 300px;
+    top:10%;
+    left: 30%;
+
+}
+
+
+
+.ImagenPublicacion{
+    
+    position:flex;
+    top:50%;
+    left: 25%;
+    width: 40rem;
+    height: flex;
+
+
+}
+.card-title{
+    font-family: 'segoe UI',Tahoma,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    color: #878787;
+    overflow: hidden;
+    padding:9px 0 20px 20px;
+}
+.card-text{
+    font-family: 'segoe UI',Tahoma,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    color: #878787;
+    overflow: hidden;
+    padding:9px 0 20px 20px;
+    width: 30rem;
+}
+.btnBorrar{
+    background: red;
+}
